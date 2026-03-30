@@ -52,7 +52,7 @@ self.obs_buf = torch.cat((self.simulator.base_lin_vel * self.obs_scales.lin_vel,
 以下是运动的演示视频：
 
 <video preload="auto" controls="True" width="100%">
-<source src="https://github.com/lupinjia/genesis_lr_doc/raw/refs/heads/main/source/_static/videos/simple_rl_demo.mp4" type="video/mp4">
+<source src="https://github.com/lupinjia/leggedgym-ex-doc/raw/refs/heads/main/source/_static/videos/simple_rl_demo.mp4" type="video/mp4">
 </video>
 
 您可以看到这个四足机器人可以按照我们期望的速度指令行走，这些指令通过操纵杆指定。但这个策略只是一个最简单的版本，它在受到外部干扰和复杂地形时表现不佳。

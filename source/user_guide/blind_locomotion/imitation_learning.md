@@ -45,13 +45,13 @@ python legged_gym/scripts/process_reference_motion.py --task=g1_motion_vis --mot
 训练结束后，你可以使用 `python legged_gym/scripts/play.py --task=g1_motion_vis --motion_file=name_of_your_processed_motion.pkl --load_run=loaded_training_session` 查看结果。以下是一些演示：
 
 <video preload="auto" controls="True" width="100%">
-<source src="https://github.com/lupinjia/genesis_lr_doc/raw/refs/heads/main/source/_static/videos/g1_mimic_walk_isaaclab.mp4" type="video/mp4">
+<source src="https://github.com/lupinjia/leggedgym-ex-doc/raw/refs/heads/main/source/_static/videos/g1_mimic_walk_isaaclab.mp4" type="video/mp4">
 </video>
 
 <video preload="auto" controls="True" width="100%">
-<source src="https://github.com/lupinjia/genesis_lr_doc/raw/refs/heads/main/source/_static/videos/g1_mimic_run_isaacgym.mp4" type="video/mp4">
+<source src="https://github.com/lupinjia/leggedgym-ex-doc/raw/refs/heads/main/source/_static/videos/g1_mimic_run_isaacgym.mp4" type="video/mp4">
 </video>
 
 <video preload="auto" controls="True" width="100%">
-<source src="https://github.com/lupinjia/genesis_lr_doc/raw/refs/heads/main/source/_static/videos/g1_mimic_dance_isaacgym.mp4" type="video/mp4">
+<source src="https://github.com/lupinjia/leggedgym-ex-doc/raw/refs/heads/main/source/_static/videos/g1_mimic_dance_isaacgym.mp4" type="video/mp4">
 </video>
