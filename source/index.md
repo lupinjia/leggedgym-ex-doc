@@ -40,11 +40,11 @@ A [legged_gym](https://github.com/leggedrobotics/legged_gym) based framework for
 
 | Robot | Sim | Real |
 |--- | --- | --- |
-| Unitree Go2 | <img src="https://raw.githubusercontent.com/lupinjia/demo_imgs/refs/heads/master/ee_demo.gif" width="428"> | [video](https://www.bilibili.com/video/BV1FPedzZEdi/) |
-| TRON1_PF | <img src="https://github.com/lupinjia/genesis_lr_doc/blob/main/source/_static/images/tron1_pf_ee_demo.gif?raw=true" width="428"> | [video](https://www.bilibili.com/video/BV1MdePzcEvk/) |
-| TRON1_SF | <img src="https://github.com/lupinjia/genesis_lr_doc/blob/main/source/_static/images/tron1_sf_demo.gif?raw=true" width="428"> | |
-| Unitree G1 DeepMimic | <img src="https://github.com/lupinjia/genesis_lr_doc/blob/main/source/_static/images/g1_mimic_demo.gif?raw=true" width="428"> | |
-| Booster K1 | <img src="https://github.com/lupinjia/genesis_lr_doc/blob/main/source/_static/images/booster_k1_demo.gif?raw=true" width="428"> | [video](https://www.bilibili.com/video/BV1GyXgBmEa9/) |
+| Unitree Go2 | <img src="https://github.com/lupinjia/leggedgym-ex-doc/blob/main/source/_static/images/ee_demo.gif?raw=true" width="428"> | [video](https://www.bilibili.com/video/BV1FPedzZEdi/) |
+| TRON1_PF | <img src="https://github.com/lupinjia/leggedgym-ex-doc/blob/main/source/_static/images/tron1_pf_ee_demo.gif?raw=true" width="428"> | [video](https://www.bilibili.com/video/BV1MdePzcEvk/) |
+| TRON1_SF | <img src="https://github.com/lupinjia/leggedgym-ex-doc/blob/main/source/_static/images/tron1_sf_demo.gif?raw=true" width="428"> | |
+| Unitree G1 DeepMimic | <img src="https://github.com/lupinjia/leggedgym-ex-doc/blob/main/source/_static/images/g1_mimic_demo.gif?raw=true" width="428"> | |
+| Booster K1 | <img src="https://github.com/lupinjia/leggedgym-ex-doc/blob/main/source/_static/images/booster_k1_demo.gif?raw=true" width="428"> | [video](https://www.bilibili.com/video/BV1GyXgBmEa9/) |
 
 ## Acknowledgements
 
@@ -70,7 +70,7 @@ A [legged_gym](https://github.com/leggedrobotics/legged_gym) based framework for
 
 You can add our Feishu group to get latest updates or ask questions:
 
-<img src="https://github.com/lupinjia/genesis_lr_doc/blob/main/source/_static/images/feishu_group_qrcode.png?raw=true" width="350">
+<img src="https://github.com/lupinjia/leggedgym-ex-doc/blob/main/source/_static/images/feishu_group_qrcode.png?raw=true" width="350">
 
 ---
 
