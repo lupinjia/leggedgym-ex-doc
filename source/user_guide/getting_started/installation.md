@@ -103,6 +103,18 @@ Finally, you need to register a wandb account and set the environment variable:
 export WANDB_API_KEY=<your_api_key>
 ```
 
+## Known Issues
+
+### IsaacGym window does not show rendered physical world
+
+You may encounter this problem when your nvidia driver version is >= 570. To solve this, use `export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json`.
+
+IsaacGym uses Vulkan to render graphics. In a driver with new version, the system may not be able to find correct Vulkan ICD (Installable Client Driver) configuration file.
+
+### ImportError: libpython3.8.so.1.0: cannot open shared object file: No such file or directory
+
+Add library path of your current conda environment to `LD_LIBRARY_PATH`. For example, `export LD_LIBRARY_PATH=/home/user_name/miniconda3/envs/lr_gym/lib`
+
 ## Optional Installation
 
 ### Unitree Go2 Sim2Sim
