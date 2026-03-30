@@ -103,6 +103,18 @@ python legged_gym/scripts/train.py --task=go2 --num_envs=100
 export WANDB_API_KEY=<your_api_key>
 ```
 
+## 已知问题
+
+### IsaacGym窗口不显示渲染的物理世界
+
+当你的电脑中Nvidia显卡驱动版本>=570时你可能会遇到这个问题. 在命令行中使用`export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json`可以解决这个问题.
+
+IsaacGym使用Vulkan来渲染图形. 在一个较新的驱动下, 系统可能找不到正确的Vulkan ICD (Installable Client Driver)配置文件位置.
+
+### ImportError: libpython3.8.so.1.0: cannot open shared object file: No such file or directory
+
+将当前conda环境的库路径添加到`LD_LIBRARY_PATH`. 例如, `export LD_LIBRARY_PATH=/home/user_name/miniconda3/envs/lr_gym/lib`
+
 ## 可选安装
 
 ### Unitree Go2 仿真到仿真（Sim2Sim）
