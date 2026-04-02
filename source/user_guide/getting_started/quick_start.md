@@ -29,7 +29,7 @@ elif sys.version_info[1] <= 8 and sys.version_info[1] >= 6: # >=3.6 且 <3.9 用
 在终端中运行脚本：
 
 ```bash
-./switch_simulator.sh
+source ./switch_simulator.sh
 ```
 
 您将看到可用的仿真器环境：
