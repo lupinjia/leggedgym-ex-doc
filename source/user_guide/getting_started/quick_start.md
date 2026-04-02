@@ -29,7 +29,7 @@ We provide a convenient script `switch_simulator.sh` to help you quickly switch 
 Run the script in the terminal:
 
 ```bash
-./switch_simulator.sh
+source ./switch_simulator.sh
 ```
 
 You will see the available simulator environments:
