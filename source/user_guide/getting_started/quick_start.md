@@ -20,6 +20,71 @@ To use IsaacGym, you need a virtual environment with python3.8. Python3.10 is vi
 
 You can define customized strategies for switching between different simulators.
 
+## Switch Between Simulators
+
+We provide a convenient script `switch_simulator.sh` to help you quickly switch between different simulator environments.
+
+### Usage
+
+Run the script in the terminal:
+
+```bash
+./switch_simulator.sh
+```
+
+You will see the available simulator environments:
+
+```
+==========================================
+       Simulator Switcher Tool
+==========================================
+
+Available conda environments:
+  [✓] lr_gym (IsaacGym)
+  [✓] lr_gen (Genesis)
+  [✓] lr_lab (IsaacLab)
+
+Available options: isaacgym, genesis, isaaclab
+Please enter the simulator name (or type 'exit' to quit):
+```
+
+Enter one of the following options:
+- `isaacgym` - Switch to IsaacGym environment (Python 3.8)
+- `genesis` - Switch to Genesis environment (Python 3.10)
+- `isaaclab` - Switch to IsaacLab environment (Python 3.11)
+
+### What the Script Does
+
+The script automatically:
+1. Detects available conda environments
+2. Activates the corresponding environment
+3. Sets necessary environment variables:
+   - **IsaacGym**: Exports `LD_LIBRARY_PATH` for IsaacGym libraries
+   - **Genesis**: Exports `SIMULATOR=genesis`
+   - **IsaacLab**: Exports `SIMULATOR=isaaclab`
+
+### Manual Environment Switching
+
+If you prefer to manually switch environments, use the following commands:
+
+**IsaacGym:**
+```bash
+conda activate lr_gym
+export LD_LIBRARY_PATH=/home/username/miniconda3/envs/lr_gym/lib:$LD_LIBRARY_PATH
+```
+
+**Genesis:**
+```bash
+conda activate lr_gen
+export SIMULATOR=genesis
+```
+
+**IsaacLab:**
+```bash
+conda activate lr_lab
+export SIMULATOR=isaaclab
+```
+
 ## Train a go2 policy on the plane
 
 Under the directory of `legged_gym/envs`, we can see multiple folders for different robots. To train a locomotion policy for go2 robot on the flat ground, we can refer to the `go2` environment in `legged_gym/envs/go2/go2.py` which inherits the `LeggedRobot` class from `legged_gym/envs/base/legged_robot.py`.
