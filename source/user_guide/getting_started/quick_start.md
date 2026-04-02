@@ -20,6 +20,71 @@ elif sys.version_info[1] <= 8 and sys.version_info[1] >= 6: # >=3.6 且 <3.9 用
 
 您可以定义自定义策略来在不同仿真器之间切换。
 
+## 切换仿真器环境
+
+我们提供了一个便捷的脚本 `switch_simulator.sh`，帮助您快速切换不同的仿真器环境。
+
+### 使用方法
+
+在终端中运行脚本：
+
+```bash
+./switch_simulator.sh
+```
+
+您将看到可用的仿真器环境：
+
+```
+==========================================
+       仿真器切换工具
+==========================================
+
+可用的 Conda 环境：
+  [✓] lr_gym (IsaacGym)
+  [✓] lr_gen (Genesis)
+  [✓] lr_lab (IsaacLab)
+
+可用选项：isaacgym、genesis、isaaclab
+请输入要切换的仿真器名称（或输入 'exit' 退出）：
+```
+
+输入以下选项之一：
+- `isaacgym` - 切换到 IsaacGym 环境（Python 3.8）
+- `genesis` - 切换到 Genesis 环境（Python 3.10）
+- `isaaclab` - 切换到 IsaacLab 环境（Python 3.11）
+
+### 脚本功能
+
+脚本会自动执行以下操作：
+1. 检测可用的 Conda 环境
+2. 激活对应的环境
+3. 设置必要的环境变量：
+   - **IsaacGym**：导出 `LD_LIBRARY_PATH` 用于 IsaacGym 库
+   - **Genesis**：导出 `SIMULATOR=genesis`
+   - **IsaacLab**：导出 `SIMULATOR=isaaclab`
+
+### 手动切换环境
+
+如果您希望手动切换环境，请使用以下命令：
+
+**IsaacGym：**
+```bash
+conda activate lr_gym
+export LD_LIBRARY_PATH=/home/username/miniconda3/envs/lr_gym/lib:$LD_LIBRARY_PATH
+```
+
+**Genesis：**
+```bash
+conda activate lr_gen
+export SIMULATOR=genesis
+```
+
+**IsaacLab：**
+```bash
+conda activate lr_lab
+export SIMULATOR=isaaclab
+```
+
 ## 在平面上训练 Go2 策略
 
 在 `legged_gym/envs` 目录下，我们可以看到多个针对不同机器人的文件夹。要为 Go2 机器人在平面上训练一个运动策略，我们可以参考 `legged_gym/envs/go2/go2.py` 中的 `go2` 环境，它继承自 `legged_gym/envs/base/legged_robot.py` 中的 `LeggedRobot` 类。
