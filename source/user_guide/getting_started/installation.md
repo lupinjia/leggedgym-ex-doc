@@ -115,6 +115,15 @@ IsaacGym uses Vulkan to render graphics. In a driver with new version, the syste
 
 Add library path of your current conda environment to `LD_LIBRARY_PATH`. For example, `export LD_LIBRARY_PATH=/home/user_name/miniconda3/envs/lr_gym/lib`
 
+### ModuleNotFoundError: No module named 'pkg_resources'
+
+> refer to https://github.com/isaac-sim/IsaacLab/issues?q=is%3Aissue%20state%3Aopen%20ModuleNotFoundError%3A%20No%20module%20named%20%27pkg_resources%27
+
+Modify `source/isaaclab/setup.py`:
+```python
+"flatdict==4.1.0" # change flatdict version from 4.0.1 to 4.1.0
+```
+
 ## Optional Installation
 
 ### Unitree Go2 Sim2Sim
