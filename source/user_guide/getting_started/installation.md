@@ -81,7 +81,7 @@ pip install --upgrade "isaacsim[all,extscache]==5.1.0" --extra-index-url https:/
 # 3. Verify IsaacSim Installation
 isaacsim # If a window appears, then it is successful
 # 4. Clone and install isaaclab
-git clone https://github.com/isaac-sim/IsaacLab.git && cd IsaacLab
+git clone https://github.com/isaac-sim/IsaacLab.git && cd IsaacLab && git checkout v2.3.2
 ./isaaclab.sh --install none # do not install rl lib to use our custom rl library
 # 5. Verify IsaacLab Installtion
 python scripts/tutorials/00_sim/create_empty.py # If a windows with black scene appears, it is successful.
