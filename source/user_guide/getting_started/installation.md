@@ -115,6 +115,15 @@ IsaacGym使用Vulkan来渲染图形. 在一个较新的驱动下, 系统可能�
 
 将当前conda环境的库路径添加到`LD_LIBRARY_PATH`. 例如, `export LD_LIBRARY_PATH=/home/user_name/miniconda3/envs/lr_gym/lib`
 
+### ModuleNotFoundError: No module named 'pkg_resources'
+
+> 参考 https://github.com/isaac-sim/IsaacLab/issues?q=is%3Aissue%20state%3Aopen%20ModuleNotFoundError%3A%20No%20module%20named%20%27pkg_resources%27
+
+修改 `source/isaaclab/setup.py`:
+```python
+"flatdict==4.1.0" # change flatdict version from 4.0.1 to 4.1.0
+```
+
 ## 可选安装
 
 ### Unitree Go2 仿真到仿真（Sim2Sim）
