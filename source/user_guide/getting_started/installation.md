@@ -81,7 +81,7 @@ pip install --upgrade "isaacsim[all,extscache]==5.1.0" --extra-index-url https:/
 # 3. 验证 IsaacSim 安装
 isaacsim # 如果出现窗口，则表示安装成功
 # 4. 克隆并安装 isaaclab
-git clone https://github.com/isaac-sim/IsaacLab.git && cd IsaacLab
+git clone https://github.com/isaac-sim/IsaacLab.git && cd IsaacLab && git checkout v2.3.2
 ./isaaclab.sh --install none # 不安装 RL 库，以使用我们自定义的 RL 库
 # 5. 验证 IsaacLab 安装
 python scripts/tutorials/00_sim/create_empty.py # 如果出现带有黑色场景的窗口，则表示安装成功
