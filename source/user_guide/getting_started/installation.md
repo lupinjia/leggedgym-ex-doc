@@ -117,7 +117,7 @@ Add library path of your current conda environment to `LD_LIBRARY_PATH`. For exa
 
 ### ModuleNotFoundError: No module named 'pkg_resources'
 
-> refer to https://github.com/isaac-sim/IsaacLab/issues?q=is%3Aissue%20state%3Aopen%20ModuleNotFoundError%3A%20No%20module%20named%20%27pkg_resources%27
+> refer to https://github.com/isaac-sim/IsaacLab/issues/4576
 
 Modify `source/isaaclab/setup.py`:
 ```python

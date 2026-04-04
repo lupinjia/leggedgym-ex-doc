@@ -23,3 +23,11 @@ blind_locomotion/imitation_learning
 blind_locomotion/sim2real_skills
 ```
 
+```{toctree}
+:caption: Support
+:maxdepth: 1
+
+faq
+troubleshooting
+```
+
