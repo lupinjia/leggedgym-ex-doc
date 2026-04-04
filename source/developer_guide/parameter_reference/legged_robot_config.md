@@ -401,3 +401,11 @@ PPO 算法配置类。
 | `load_run` | int | -1 | 要加载的运行 ID，-1 表示最后一次运行 |
 | `checkpoint` | int | -1 | 检查点 ID，-1 表示最后保存的模型 |
 | `resume_path` | str | None | 恢复路径，从 load_run 和 checkpoint 更新 |
+
+## 附录：Main 新增内容（中英对照）
+
+- Intro: This document provides detailed descriptions of all configuration parameters defined in . 本文档提供了  中定义的所有配置参数（configuration parameters）的详细说明。
+- Terrain: Terrain configuration in main adds/broadens parameter descriptions. 地形配置在主分支中添加/扩展了参数描述，以下为要点对照：
+  - mesh_type: Terrain mesh type: plane, heightfield, trimesh; 地形网格类型：plane、heightfield、trimesh
+  - plane_length: Plane size [m], default 200; 平面尺寸 [m]，默认 200
+  - horizontal_scale: Distance between height samples in x/y direction [m]; X/Y 方向高度采样点间距 [m]
