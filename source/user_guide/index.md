@@ -22,3 +22,11 @@ blind_locomotion/dreamwaq
 blind_locomotion/imitation_learning
 blind_locomotion/sim2real_skills
 ```
+
+```{toctree}
+:caption: 支持与帮助
+:maxdepth: 1
+
+troubleshooting
+faq
+```
