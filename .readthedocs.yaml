@@ -1,4 +1,6 @@
-# Read the Docs configuration file for Chinese documentation
+
+
+# Read the Docs configuration file
 # See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
 
 # Required
@@ -20,3 +22,4 @@ sphinx:
 python:
    install:
    - requirements: requirements.txt
+        
