@@ -16,11 +16,16 @@
 |       | go2_cat | 在 Go2 上实现约束作为终止条件（Constraints as Terminations, CaT），用于在复杂地形上行走 | [CaT: Constraints as Terminations for Legged Locomotion Reinforcement Learning](https://constraints-as-terminations.github.io/) |
 |       | go2_nav | 在 Go2 上实现端到端局部导航（End-to-end local navigation） | [Advanced Skills by Learning Locomotion and Local Navigation End-to-End](https://arxiv.org/abs/2209.12827) |
 |       | go2_cts | 实现并发教师-学生（Concurrent Teacher Student, CTS）框架 | [CTS: Concurrent Teacher-Student Reinforcement Learning for Legged Locomotion](https://clearlab-sustech.github.io/concurrentTS/) |
+|       | go2_ts_depth | Go2 深度估计变体（ts_depth） | |
 | Unitree G1 | g1 | 在平面上训练 G1 机器人行走策略的简单示例（仅 12 自由度，上身固定） | |
 |            | g1_deepmimic | 在 Unitree G1 上实现 DeepMimic（29 自由度） | [DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills](https://xbpeng.github.io/projects/DeepMimic/index.html) |
+|            | g1_motion_vis | G1 动作可视化 | |
 | Limx TRON1PF | tron1pf | 在平面上训练 TRON1PF 机器人行走策略的简单示例 | |
 |       | tron1pf_ee | 在 TRON1PF 上实现显式估计器（Explicit Estimator），用于在复杂地形上行走 |  |
 | Limx TRON1SF | tron1sf | 在平面上训练 TRON1SF 机器人行走策略的简单示例 | |
 |       | tron1sf_ee | 在 TRON1SF 上实现显式估计器（Explicit Estimator），用于在复杂地形上行走 | |
 | Booster K1 | k1 | 在平面上训练 K1 机器人行走策略的简单示例 | |
-|        | k1_deepmimic | 在 K1 上实现 DeepMimic | |
+|  | k1_amp | 在 Booster K1 上实现 AMP | [AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control](https://arxiv.org/abs/2104.02180) |
+|  | k1_cts_amp | 在 Booster K1 上实现 CTS AMP | |
+|  | k1_motion_vis | K1 动作可视化 | |
+|        | k1_deepmimic | 在 Booster K1 上实现 DeepMimic（29 自由度） | [DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills](https://xbpeng.github.io/projects/DeepMimic/index.html) |

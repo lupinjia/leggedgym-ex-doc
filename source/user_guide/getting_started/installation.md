@@ -117,7 +117,7 @@ IsaacGym使用Vulkan来渲染图形. 在一个较新的驱动下, 系统可能�
 
 ### ModuleNotFoundError: No module named 'pkg_resources'
 
-> 参考 https://github.com/isaac-sim/IsaacLab/issues?q=is%3Aissue%20state%3Aopen%20ModuleNotFoundError%3A%20No%20module%20named%20%27pkg_resources%27
+> 参考 https://github.com/isaac-sim/IsaacLab/issues/4576
 
 修改 `source/isaaclab/setup.py`:
 ```python
@@ -147,3 +147,4 @@ IsaacGym使用Vulkan来渲染图形. 在一个较新的驱动下, 系统可能�
 
 ```{figure} ../../_static/images/tron1_pf_ee_demo.gif
 ```
+
