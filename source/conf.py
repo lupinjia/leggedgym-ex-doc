@@ -13,12 +13,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "LeggedGym-Ex 中文文档"
+project = "LeggedGym-Ex"
 copyright = "2025, Yasen Jia"
 author = "Yasen Jia"
-
-# Language configuration for Chinese
-language = 'zh_CN'
 
 
 # -- General configuration ---------------------------------------------------
