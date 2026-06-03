@@ -103,6 +103,63 @@ Finally, you need to register a wandb account and set the environment variable:
 export WANDB_API_KEY=<your_api_key>
 ```
 
+## Using Docker
+
+We provide 4 dockerfiles for different scenarios: 
+
+| Dockerfile | Description | Python | CUDA | PyTorch |
+|------------|------|--------|------|---------|
+| `Dockerfile` | Multiple simulators | 3.8/3.10/3.11 | 12.8 | 2.4.1/2.8.0 |
+| `Dockerfile.genesis` | Genesis only | 3.10 | 12.6 | 2.8.0 |
+| `Dockerfile.isaacgym` | IsaacGym only | 3.8 | 12.6 | 2.4.1 |
+| `Dockerfile.isaaclab` | IsaacSim/IsaacLab only | 3.11 | 12.8 | - |
+
+If you want lightweight container with only one simulator, then you can choose one of three single-simulator version to use. 
+
+If you want to use this framework with full simulator backend support, the multiple-simulators version is more favorable (need at least 70GB of disk).
+
+### Building the image
+
+#### Multiple Simulators
+
+```bash
+# first download isaacgym and IsaacLab following the instructions above.
+# The desired directory tree is like below:
+#   ├── IsaacLab/
+#   ├── isaacgym/
+#   └── LeggedGym-Ex/
+
+cd /path/to/LeggedGym-Ex
+docker build -t leggedgym-ex:all -f Dockerfile ..
+```
+
+#### IsaacGym Only
+
+```bash
+# first download isaacgym following the instructions above.
+# The desired directory tree is like below:
+#   ├── isaacgym/
+#   └── LeggedGym-Ex/
+cd /path/to/LeggedGym-Ex
+docker build -t leggedgym-ex:isaacgym -f Dockerfile.isaacgym ..
+```
+
+#### Genesis Only
+```bash
+docker build -t leggedgym-ex:genesis -f Dockerfile.genesis .
+```
+
+#### IsaacLab Only
+```bash
+# first download IsaacLab following the instructions above.
+# The desired directory tree is like below:
+#   ├── IsaacLab/
+#   └── LeggedGym-Ex/
+
+docker build -t leggedgym-ex:isaaclab -f Dockerfile.isaaclab ..
+```
+
+
 ## Known Issues
 
 ### IsaacGym window does not show rendered physical world

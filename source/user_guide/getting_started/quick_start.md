@@ -85,6 +85,32 @@ conda activate lr_lab
 export SIMULATOR=isaaclab
 ```
 
+### Switching Environments in Docker
+
+Outside of the container:
+```bash
+# IsaacGym
+docker run --gpus all -it --rm leggedgym-ex:all isaacgym
+# Genesis  
+docker run --gpus all -it --rm leggedgym-ex:all genesis
+# IsaacSim
+docker run --gpus all -it --rm leggedgym-ex:all isaacsim
+```
+
+Inside the container:
+```bash
+# IsaacGym
+source /workspace/LeggedGym-Ex/.venv-isaacgym/bin/activate
+export SIMULATOR=isaacgym
+# Genesis
+source /workspace/LeggedGym-Ex/.venv-genesis/bin/activate
+export SIMULATOR=genesis
+# IsaacSim/IsaacLab
+source /workspace/LeggedGym-Ex/.venv-isaaclab/bin/activate
+export SIMULATOR=isaaclab
+```
+
+
 ## Train a go2 policy on the plane
 
 Under the directory of `legged_gym/envs`, we can see multiple folders for different robots. To train a locomotion policy for go2 robot on the flat ground, we can refer to the `go2` environment in `legged_gym/envs/go2/go2.py` which inherits the `LeggedRobot` class from `legged_gym/envs/base/legged_robot.py`.
